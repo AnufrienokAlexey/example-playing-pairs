@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    margin: 20px auto;
+    position: relative;
+}
+
+.startbutton {
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container-row {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    background-image: url('../images/cat.png');
+    background-size: 100%;
+    outline: 2px solid rebeccapurple;
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+
+.card-clicked {
+    background-color: royalblue;
+    background-image: none;
+}
+
+.red {
+    background-color: rebeccapurple;
+}
+
+.range {
+    margin: 20px 20%;
+}
+
+.rangeText {
+    margin: 20px auto;
+    font-size: 1.5em;
+}
+
+.retry {
+    padding-right: 90px;
+    background-image: url('../images/retry.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+    background-size: 50px 50px;
+}
+
+.switch-btn {
+    display: inline-block;
+    width: 72px;
+    height: 38px;
+    border-radius: 19px;
+    background: #bfbfbf;
+    z-index: 0;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+  }
+
+  .switch-btn::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    border-radius: 17px;
+    background: #fff;
+    top: 3px;
+    left: 3px;
+    transition-duration: 300ms;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .switch-on {
+    background-color: #118c4e;
+  }
+
+  .switch-on::after {
+    left: 37px;
+  }
